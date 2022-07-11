@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Подсчет гласных, согласных, букв, слов, предложений</title>
+    <meta name='viewport' content='width=1020px'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="isCentered">
+        <div class="wrapper">
+            <span class="input">
+                <div class="wrapper">
+                    <p class="title">Счетчик знаков, слов, предложений...</p>
+                    <span class="isCentered">
+                        <div class="wrapper">
+                            <textarea class="text" type="submit" form="counter" required autofocus placeholder="   Введите текст для подсчета..."></textarea>
+                        </div>
+                        <div class="wrapper">
+                            <form id="counter">
+                                <input id="consonants" required type="radio" name="choice"> Согласные<Br>
+                                <input id="vowels" type="radio" name="choice"> Гласные<Br>
+                                <input id="letters" type="radio" name="choice"> Буквы<Br>
+                                <input id="symbols" type="radio" name="choice"> Символы<Br>
+                                <input id="specialCharacters" type="radio" name="choice"> Спецсимволы<Br>
+                                <input id="words" type="radio" name="choice"> Слова<Br>
+                                <input id="sentence" type="radio" name="choice"> Предложения<Br>
+                            </form>
+                        </div>
+                    </span>
+                    <span class="isCentered">
+                        <button class="calc" form="counter">
+                            <p>Сосчитать</p>
+                        </button>
+                    </span>
+                </div>
+            </span>
+            <span class="output isCentered">
+            </span>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

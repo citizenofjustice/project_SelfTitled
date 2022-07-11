@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="1020px">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Заметки</title>
+</head>
+<body>
+    <header class="isCentered">
+        <h1>Заметки</h1>
+    </header>
+    <section class="main">
+        <div class="wrapper">
+            <div class="input">
+                <div class="orange isCentered"><h3>Введите текст заметки</h3></div>
+                <div class="isCentered">
+                    <form class="noteText">
+                        <div>
+                            <label class="description">
+                                Запись:
+                                <p>
+                                    <textarea id="noteInput" oninput="elastic(this)" autofocus placeholder="Введите текст вашей заметки..."></textarea>
+                               </p>
+                            </label>
+                        </div>
+                        <div class="isCentered">
+                            <button id="addButton" type="submit">Добавить</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="output isCentered">
+                <div>
+                    <div class="noteGrid"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>

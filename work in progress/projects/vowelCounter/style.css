@@ -1,0 +1,83 @@
+body{
+    background: #FFDADA;
+    margin-top: 80px;
+    min-width: 1020px;
+}
+
+.isCentered{
+    display: flex;
+    justify-content: center;
+}
+.input{
+    display: inline-flex;
+    width: 1000px;
+    min-height: 300px;
+    background: rgba(155, 217, 198, 0.69);
+    border: 3px solid #9A2500;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 37px;
+}
+.output{
+    display: none;
+    margin-top: 20px;
+    width: 1000px;
+    height: 100px;
+    background: rgba(155, 217, 198, 0.69);
+    border: 3px solid #9A2500;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 37px;
+}
+.wrapper{
+    width: inherit;
+}
+.title{
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 600;
+    font-size: 40pt;
+    margin: 10px 10px 20px;
+    text-align: center;
+    color: rgba(140, 0, 0, 0.7);
+    text-shadow:rgb(255, 133, 96) 2px 2px;
+}
+.calc{
+    margin: 10px;
+    width: 125px;
+    background-color:  #9A4541;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.calc > p{
+    color: #FFFFFF;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 600;
+    font-size: 16pt;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.text{
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 600;
+    font-size: 14pt;
+    resize: none;
+    width: 700px;
+    min-height: 130px;
+    max-height: 230px;
+    border-radius: 5px;
+}
+.result{
+    margin: 20px;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 600;
+    font-size: 14pt;
+    resize: none;
+    width: 650px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+}
+#counter{
+    margin-left: 20px;
+}
+textarea{
+    border: 3px solid rgb(255, 133, 96);
+}

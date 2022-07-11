@@ -1,0 +1,94 @@
+html{ height: 100%;}
+body {
+    height: 100%;
+    line-height: 1;
+}
+.wrapper{
+    margin: 3.125rem auto;
+    padding: 1.875rem 0;
+    width: fit-content;
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(150, 211, 255);
+    border-radius: 1.25rem;
+}
+.container{
+    margin: 0 1.25rem;
+    padding: 0px 2rem;
+    box-sizing: content-box;
+    background-color:rgb(255, 195, 121);
+    border: .125rem solid rgb(0, 0, 0);
+    border-radius: .625rem;
+    min-width: 20rem;
+    padding: 10px;
+}
+.container:not(:last-child){
+    margin: 0 0 1rem 0;
+}
+#in{ margin: 10px 0; }
+#in * input{
+    font-family: 'Oswald', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    border: 2px solid rgb(45, 131, 230);
+}
+#in * button{
+    background-color: rgb(45, 131, 230);
+    font-family: 'Oswald', sans-serif;
+    font-size: 12pt;
+    font-weight: 400;
+    color: white;
+    border-radius: 5px;
+}
+p{ font-size: 14pt; font-weight: 600; margin: 0; padding-bottom: 10px;}
+#out{
+    display: flex;
+    flex-direction: column;
+}
+#out * p{
+    display: inline-block;
+    margin: 0 0 0 10px;
+    padding: 0;
+    font-size: 12pt;
+    font-weight: 600;
+}
+#out * button{
+    float: right;
+    border: none;
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    opacity: 0.6;
+    border-radius: 3px;
+}
+#out * button:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+
+span{
+    min-width: 20rem;
+    max-width: 40rem;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-bottom: 5px;
+    word-wrap:break-word;
+    overflow-x:hidden;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' -25,
+    'opsz' 24;
+    color: rgb(215, 73, 16);
+    font-size: fa-xs;
+}
+.dye{ background-color: rgb(212, 212, 212); color: rgb(245, 245, 245); }
+.crossed{ text-decoration: line-through; }
+
+
+

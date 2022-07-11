@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    text-shadow:rgba(255, 123, 0, 0.718) 1px 1px;
+    min-width: 1020px;
+    /* background-color: rgb(243, 243, 243); */
+}
+header{ font-size: 24pt;}
+.main{
+    min-height: 350px;
+    width: 1000px;
+
+    margin: auto;
+}
+.input, .output{
+    margin: 15px 0;
+    min-height: 100px;
+    width: 1000px;
+    outline: 4px solid rgba(210, 182, 0, 0.599);
+    border-radius: 5px;
+    border-style: ridge;
+}
+.output {
+    align-items: center;
+}
+.noteText{ padding: 10px 0; }
+.noteGrid{
+    
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.isCentered{
+    display: flex;
+    justify-content: center;
+}
+.tmpDiv{
+    border: 2px solid rgba(247, 91, 0, 0.636);
+    display: inline-block;
+    min-width: 100px;
+    max-width: 450px;
+}
+.shortNote{
+    border: 1px solid rgb(21, 20, 21);
+
+}
+button{
+    background-color: rgba(255, 123, 0, 0.718);
+    color: black;
+    text-align: center;
+}
+button:hover, .delButton:hover{
+    cursor: pointer;
+}
+.noteText * button{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 14pt;
+    border-radius: 7px;
+    padding: 5px;
+}
+.noteGrid * button{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    border-radius: 5px;
+    padding: 2px;
+    margin-bottom: 10px;
+}
+#noteInput{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 14pt;
+    resize: none;
+    /* overflow: hidden; */
+    width: 800px;
+    min-height: 50px;
+    max-height: 300px;
+}
+h1, h3{ margin: 10px 0;}
+/* p{ margin: 0; padding: 0;} */
+.orange{
+    color: rgba(255, 123, 0, 0.718);
+    text-shadow:rgba(0, 0, 0, 0.718) 1px 1px;
+    font-size: 20pt;
+}
+.description{
+    font-size: 18pt;
+    font-weight: 600;
+}
+.emptyMsg{
+    font-size: 16pt;
+    font-weight: 600;
+    border: 1px solid saddlebrown;
+    text-align: center;
+    margin: 0 50px;
+}
+.overflow-ellipsis{
+    text-align: justify;
+    margin: 5px 20px;
+    min-height: 72px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.delButton{
+    /* border: 1px solid seagreen; */
+    padding: 2px 7px;
+    float: right;
+    color: #c6c6c6;
+    font-weight: 800;
+    text-shadow: none;
+}
+.delButton:hover{ color:rgb(0, 0, 0); text-shadow:#ff394a 1px 0.5px; ; transition: all 0.5s; }
+
+.title{
+    margin: 10px 0 0 10px;
+    font-size: 14pt;
+    font-weight: 800;
+}
+.popup{
+    position: absolute ;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    min-height: 100%;
+    color: #ccc;
+    padding: 0 50px 500px;
+}
+.popupContent{
+    overflow:hidden;
+    width: 800px;
+    min-height: 200px;
+    max-height: 800px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed ;
+    background-color: #ececec;
+    overflow-y: auto;
+}
+.popupText{
+    margin: 20px;
+    text-align: justify;
+    text-indent: 30px;
+    color: black;
+}
