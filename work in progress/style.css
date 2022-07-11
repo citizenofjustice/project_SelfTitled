@@ -67,10 +67,8 @@ body {
 }
 
 .wrapper{
-    /* min-height: 100%; */
     display: flex;
     flex-direction: column;
-    overflow: hidden;
 }
 ::-webkit-scrollbar {
     width: .5rem;
@@ -88,7 +86,7 @@ body {
     padding: 0px 2rem;
     box-sizing: content-box;
 }
-section{ margin-bottom: 1rem;}
+section{ margin-bottom: 1rem;}  
 .blueBackG{ background-color: #2d83e6; }
 .flexRowCenter{ display: flex; flex-direction: row; align-items: center; justify-content: space-between;}
 .flexColumnCenter{ display: flex; flex-direction: column; align-items: center; }
@@ -254,7 +252,6 @@ header:before{
 /*---MAIN-------------------------------------------------------------*/
 
 .main{
-    /* padding: 8rem 0 0 0; */
     flex: 1 1 auto;
     
 }
@@ -269,7 +266,15 @@ header:before{
 .main h1, .main h3{ text-align: center; }
 .about * p, .skills * p{ text-align: justify; font-size: 1.25rem }
 
-.avatar{ max-width: 15rem; border-radius: 50%; overflow: hidden; margin: 2rem 0px; border: .1875rem solid #fff; outline: .1875rem solid #3700ff83;}
+.avatar{
+    max-width: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2rem 0px;
+    border: .1875rem solid #fff;
+    outline: .1875rem solid #3700ff83;
+}
+
 @media (max-width: 767px) {
     .avatar{
         max-width: 12rem;
