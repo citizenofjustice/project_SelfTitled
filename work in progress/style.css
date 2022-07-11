@@ -57,7 +57,6 @@ select {
 /* Выставляем основные настройки по-умолчанию для body */
 html{ height: 100%;}
 body {
-    height: 100%;
     line-height: 1;
     font-size: 1rem;
     color: #000000;
@@ -68,7 +67,7 @@ body {
 }
 
 .wrapper{
-    min-height: 100%;
+    /* min-height: 100%; */
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -100,11 +99,14 @@ section{ margin-bottom: 1rem;}
 /*---HEADER-----------------------------------------------------------*/
 
 .header{
-    position: fixed;
-    width: 100%;
+    position:-webkit-sticky;
+    position:sticky;
+    top:0;
+    /* position: fixed; */
+    /* width: 100%;
     left: 0;
-    top: 0;
-    z-index: 50;
+    top: 0; */
+    /* z-index: 50; */
     box-shadow: 0rem .125rem .125rem 0rem rgba(0, 0, 0, 0.616);
 }
 header:before{
@@ -252,7 +254,7 @@ header:before{
 /*---MAIN-------------------------------------------------------------*/
 
 .main{
-    padding: 8rem 0 0 0;
+    /* padding: 8rem 0 0 0; */
     flex: 1 1 auto;
     
 }
