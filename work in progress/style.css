@@ -128,8 +128,11 @@ header:before{
     background: url("images/logo!.jpg") no-repeat center;
     background-size: 5rem, 5rem;
 } */
-.burger {
+a.burgerLink {
     display: none;
+}
+a.burgerLink:hover{
+    cursor: pointer;
 }
 .menuList{
     display: flex;
@@ -176,9 +179,9 @@ header:before{
     .logo{
         flex: 0 0 3rem;
     }
+    a.burgerLink { display: block; }
     .burger {
         display: block;
-        position: relative;
         width: 1.875rem;
         height: 1.25rem;
         position: relative;
@@ -307,7 +310,7 @@ section.skills{ margin-top: -8rem; }
     flex-wrap: wrap;
 }
 
-.skills * .column:not(:last-child) { border-right: 0.06rem solid rgb(167, 167, 167); }
+.skills * .column:not(:last-child) { border-right: 0.065rem solid rgb(167, 167, 167); }
 .skills * .column {
     width: 33.333%;
     justify-content: space-between; 
