@@ -256,11 +256,14 @@ a.burgerLink:hover{
 h1, p.large{ font-family: 'Amatic SC', cursive; padding: 1rem 0rem 0rem 0rem; text-align: center;}
 h1{ font-size: 3rem; }
 p.large{ font-size: 2.5rem; font-weight: 600; }
-p.common{ font-size: 1.2rem; }
-p.just{ text-align: justify; }
-.main p.subTitle{ font-weight: 500; text-align: center;}
+.common{ font-size: 1.2rem; }
+.just{ text-align: justify; }
+.main p.subTitle{ text-align: center; }
 .skills p.large{ font-size: 2rem; }
-
+.tools > li{
+    margin-bottom: .3125rem;
+    text-align: center;
+}
 
 section.meetNgreet{ margin-bottom: 3rem; }
 .avatar{
@@ -311,8 +314,6 @@ section.skills{ margin-top: -8rem; }
 .skills * .column {
     width: 33.333%;
     justify-content: space-between; 
-    /* min-height: 20rem; */
-    /* padding: 0 1rem; */
     
 }
 @media (max-width: 768px) {
@@ -328,12 +329,10 @@ section.skills{ margin-top: -8rem; }
         padding: 0 1rem;
     }
 }
-.skills p.subTitle { color:rgb(45, 131, 230); font-weight: 700; margin: 0 3rem;}
-.skills p {
-    padding: 0 1rem;
-    /* font-size: 1.25rem; */
-    /* font-weight: 300; */
+.skills p{
+    padding: 0 1.25rem;
 }
+
 .skills * .imgWrap {
     margin-top: 1rem;
     max-width: 5rem;
