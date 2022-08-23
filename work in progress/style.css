@@ -493,8 +493,17 @@ section.projects{ margin-bottom: 2rem;}
     box-sizing: content-box;
 }
 .more{ padding: 2rem 0; text-align: center;}
+.more > .button::before{
+    content: 'Остальные проекты...';
+}
 .more > .button:hover{
     border: .0625rem solid #2d83e6;
+}
+.more > .button:hover::before{
+    content: '';
+}
+.more > .button:hover::after{
+    content: 'Пока еще в разработке...';
 }
 .more > a{ display: inline; padding: 0.5rem;}
 /*---FOOTER-----------------------------------------------------------*/
